@@ -21,7 +21,7 @@ class Repeat_and_Missing_Number_Array{
 
         for(int num : A) {
             actualSum += num;
-            actualSquareSum += (long)num * num;
+            actualSquareSum += (long)num * num; //here type conversion to long cause num*num may exceed int
         }
 
         // R - M
