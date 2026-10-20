@@ -18,7 +18,7 @@ class Solution {
             else{
                 sb.append(curr);
             }
-            i++;
+            i++; //yeah after adding curr you should move to the next element
         }
         return sb.toString();
     }

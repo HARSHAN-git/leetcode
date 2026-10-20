@@ -25,7 +25,7 @@ public class Solution {
             left--;
             right++;
         }
-
+        //now both left and right will be out of boundary or not in the position when they discovered the substring
         // Calculate the current palindrome's length
         int currentLength = right - left - 1;
 

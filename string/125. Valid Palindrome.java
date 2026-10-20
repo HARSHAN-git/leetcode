@@ -10,6 +10,6 @@ class Solution {
             }
         }
         String clean = sb.toString();
-        return clean.equals(sb.reverse().toString());
+        return clean.equals(sb.reverse().toString()); //we cannot use reverse() on a string so we are using sb here
     }
 }

@@ -1,5 +1,6 @@
 //https://www.geeksforgeeks.org/problems/longest-prefix-suffix2527/1
 //you will only understand if you simulate it 
+//is you know kmp then you dont have to bother with this sum
 class Solution {
     public int getLPSLength(String s) {
         // code here

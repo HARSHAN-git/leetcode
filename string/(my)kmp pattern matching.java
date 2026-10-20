@@ -12,7 +12,7 @@ FYI- proper prefixes ="A,AA,AAB,AABA"
 2.so during a mismatch (here at ind-5 'C' != pat(j=2)->'B') ->see we are comparing B with C not 
 starting from A again from the start this makes us automatically take the AA's infront of C into 
 account [cool right ;)]
-3.no the pointer to the text(i) stays in 'C' as the j looks for any previous matchup and ultimately
+3.now the pointer to the text(i) stays in 'C' as the j looks for any previous matchup and ultimately
 ends up as 0 
 4.then from the 6th index onwards the pattern matching continues .... 
  */

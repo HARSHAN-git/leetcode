@@ -5,7 +5,7 @@
 import java.util.*;
 
 class GfG {
-
+    //you can also use freq array also
     // Function to print duplicate characters with their count
     public static void printDuplicates(String s) {
 

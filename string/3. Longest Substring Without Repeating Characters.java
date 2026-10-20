@@ -12,7 +12,7 @@ class Solution {
             if(sb.indexOf(String.valueOf(c))!=-1){
                 while(sb.indexOf(String.valueOf(c))!=-1){
                     l++;
-                    sb=new StringBuilder(sb.substring(1,sb.length()));  //for sb dont use l
+                    sb=new StringBuilder(sb.substring(1,sb.length()));  //removing the first letter until the duplicate is removed
                 }
                 sb.append(c);
             }

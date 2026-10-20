@@ -1,6 +1,7 @@
 //https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1
 //cannot use .indexOf() for primitive datatypes
 // Complexity
+//same as leetcode 76. Minimum Window Substring
 // - Time: O(|s| + |p|) — i and l each move only forward.
 // - Space: O(1) auxiliary — both arrays have fixed size 26.
 class Solution {

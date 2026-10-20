@@ -24,15 +24,18 @@ class Solution {
             char c=s.charAt(i);
             int ind=c;
             freq[ind]++; //adding this cause we dont wanna count 0's
-            if(freq[ind]<=need[ind]){
+            if(freq[ind]<=need[ind]){ //cause the elements that are not needed will have freq 0 in needed array making cond (freq[ind]>need[ind])
                 req--;  //yehh we got something we need
             }
             while(req==0){  //damn we got everything
+                //1.update minlen
                 int currlen=i-l+1;
                 if(currlen<minlen){
                     minlen=currlen;
                     start=l;
                 }
+
+                //2.shrink the window
                 char lc=s.charAt(l);
                 int left=lc;
                 freq[left]--; //moving left means strinking the window so decreace the frequency of the removed character

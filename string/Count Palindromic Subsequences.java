@@ -1,5 +1,4 @@
 //https://www.geeksforgeeks.org/problems/count-palindromic-subsequences/1
-/*You are required to complete below method */
 class Solution {
     int countPS(String s) {
         // Your code here
@@ -12,15 +11,29 @@ class Solution {
         //since we did single elements,lets do for length 2
         for(int len=2;len<=n;len++){ //yeah if n is 3 then there may be three pairs
             //for this length lets check every pairs from the start
-            for(int i=0;i+len-1<n;i++){ //here i+lent-1 is for the right position
+            for(int i=0;i+len-1<n;i++){ //here i+len-1 is for the right position
                 int j=i+len-1; //right index
                 if(s.charAt(i)==s.charAt(j)){
-                    //number of occurances for the curr value in the dp is
-                    //no of occurances of left element(left)+right element(down)+1(current pair e.g(a,a))
+                /*
+                Suppose the current substring is "aba"
+                We already know the answers for its smaller substrings:
+                - dp[i][j-1] → "ab" has 2 palindromic subsequences: a, b
+                - dp[i+1][j] → "ba" has 2: b, a
+                we have to count the subsequence formed by taking both matching endpoints, "aa"
+                */                    
                     dp[i][j]=dp[i][j-1]+dp[i+1][j]+1;
                 }
-                else{//if they are not same then curr value is
-                //left value +right value -the already seen occurance of them which is [i-1][j-1]
+                else{
+                /*
+                Let's use "abc"
+                The endpoints differ, so we cannot form a palindrome by taking both endpoints.
+                First, count the smaller substrings:
+                - "ab" → a, b → 2
+                - "bc" → b, c → 2
+                The subsequence b appears in both lists. We counted it twice!
+                The overlapping interval is the middle substring "b"
+                So subtract its count
+                */
                     dp[i][j]=dp[i][j-1]+dp[i+1][j]-dp[i+1][j-1];
                 }
             }

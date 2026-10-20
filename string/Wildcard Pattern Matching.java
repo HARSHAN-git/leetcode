@@ -4,11 +4,10 @@ class Solution {
         // code here
         int m=txt.length();
         int n=pat.length();
-        boolean[][] dp=new boolean[n+1][m+1];
+        boolean[][] dp=new boolean[n+1][m+1]; //patterns are rows and text are the columns
         dp[0][0]=true;
-        
         //lets write a edge case were "*" comes first
-        //we turn the entire first column to *s
+        //we turn the entire first column to *
         //so that while iterating stars we take T from either left or top
         for(int i=1;i<=n;i++){
             if(pat.charAt(i-1)=='*')

@@ -36,6 +36,6 @@ class Solution {
                 operations++;
             }
         }
-        return operations;
+        return operations; //or else simply return j+1
     }
 }
