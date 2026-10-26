@@ -1,6 +1,6 @@
 //both are same
 //leetcode->http://leetcode.com/problems/house-robber/description/
-//https://www.geeksforgeeks.org/problems/stickler-theif-1587115621/1
+//gfg->https://www.geeksforgeeks.org/problems/stickler-theif-1587115621/1
 //you can think like in the word wrap problem
 //without memoization it will become O(2^n) instead of O(n)
 class Solution {
