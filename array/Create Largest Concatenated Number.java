@@ -28,7 +28,7 @@ class Solution {
        //    negative → a comes before b
        //    zero     → equal
 
-       //thi here is kinda like a decending order thing [b.compareTo(a)] 
+       //this here is kinda like a decending order thing [b.compareTo(a)] 
        Arrays.sort(s,(a,b)->(b+a).compareTo(a+b)); //if positive (a+b) comes first
        //in this sorting it just tells that in each pair which should come before which
        //hence the relative order is remembered and the elements are arranged according to this ordered

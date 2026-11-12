@@ -8,12 +8,12 @@ class subarray{
         List<List<Integer>> res=new ArrayList<>();
         build(arr,res,subarraysize,0,new ArrayList<>());
         System.out.println(res);
-        //res ->[[1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 4]]
+        //res ->[[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
     }
     public static void build(int[] arr,List<List<Integer>> res,int subarraysize,int start,List<Integer> curr){
         //base case
         if(subarraysize==0){
-            res.add(new ArrayList<>(curr));
+            res.add(new ArrayList<>(curr)); //create a copy instead of refering the curr object
             return;
         }
         //for every number
