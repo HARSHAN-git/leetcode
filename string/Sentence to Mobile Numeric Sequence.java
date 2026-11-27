@@ -1,4 +1,4 @@
-//https://www.geeksforgeeks.org/problems/convert-a-sentence-into-its-equivalent-mobile-numeric-keypad-sequence0547/1
+//https://www.geeksforgeeks.org/problems/convert-a-rsentence-into-its-equivalent-mobile-numeric-keypad-sequence0547/1
 //this is optimal dude
 class Solution {
     public String printSequence(String s) {
