@@ -14,6 +14,7 @@ as visited and move to the 3rd index , here the cycle length increase by 1 (clen
 -8 is the current index(j=3) now mark its index(3) as visited and move to its original index(1)
 -since the index j=1 is marked as visited ,now calculate the length as clen-1 and move on
 */
+import java.util.*;
 class Solution {
     public int minSwaps(int arr[]) {
         int n=arr.length;
